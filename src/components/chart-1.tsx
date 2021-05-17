@@ -25,12 +25,13 @@ export const Chart1 = () => {
           }
         },
       },
+
       yAxis: {
         splitLine: {show: false},
         axisLine: {
           show: true,
           lineStyle: {color: '#083B70'}
-        },
+        }
       },
       series: [{
         type: 'bar',

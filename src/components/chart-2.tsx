@@ -46,15 +46,15 @@ export const Chart2 = () => {
                     type: 'bar',
                     data: [2, 3, 4, 5, 6, 7, 8, 9, 10],
                     itemStyle: {
-                      normal: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
-                          offset: 0,
-                          color: '#b92ae8'
-                        }, {
-                          offset: 1,
-                          color: '#6773e7'
-                        }]),
-                      }
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                                offset: 0,
+                                color: '#b92ae8'
+                            }, {
+                                offset: 1,
+                                color: '#6773e7'
+                            }]),
+                        }
                     }
                 }
             ]
@@ -64,11 +64,10 @@ export const Chart2 = () => {
     return (
         <div className="bordered 破获排名">
             <h2>案件破获排名</h2>
-            <div ref={divRef} className="chart">
-                <div className="legend">
-                    <span className="first"> 破案排名1</span>
-                    <span className="second"> 破案排名2</span>
-                </div>
+            <div ref={divRef} className="chart"></div>
+            <div className="legend">
+                <span className="first"> 破案排名1 </span>
+                <span className="second"> 破案排名1</span>
             </div>
         </div>
     );
